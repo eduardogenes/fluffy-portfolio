@@ -1,22 +1,63 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* TODOS */
+* {
   padding: 0;
   margin: 0;
+  font-family: Merriweather Sans;
+  font-size: 13px;
+  font-weight: 400;
 }
 
-
-
-
-body{
+body {
   display: flex;
-  background-color: #22212C;
+  background-color: #22212c;
 }
 
-nav{
+/* FONTES  */
+h1 {
+  font-family: Merriweather Sans;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+li {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+span {
+}
+
+/* CAIXAS */
+nav {
   margin: 2rem;
 
-  color:#837E9F;
+  color: #837e9f;
 
-  background-color: #302F3D;
+  background-color: #302f3d;
 
   display: flex;
   flex-direction: column;
@@ -26,44 +67,222 @@ nav{
 
   border-radius: 1rem;
 
+  width: 348px;
 }
+
+/* ########### ASIDE ########## */
 
 /* PERFIL */
 
-.perfil{
+.perfil {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.perfil img{
+.perfil p {
+  font-size: 15px;
+  font-weight: 300;
+  justify-content: space-between;
+}
+
+.foto-perfil {
   width: 10rem;
   height: 10rem;
   border-radius: 100%;
 
   background: url(image.png);
-  border: 1px solid #00FF00;
+  border: 1px solid #00ff00;
 
   margin-bottom: 2rem;
 }
 
-
 /* CONTATOS */
-.contatos{
+
+.contatos {
   display: flex;
 
-  align-items:flex-start;
+  align-items: flex-start;
   justify-content: center;
-
 }
 
+.redes {
+  text-decoration: none;
+  color: #837e9f;
 
-.tecnologias ul{
   display: flex;
-  
-   
+  align-items: center;
+
+  margin: 5px;
+  gap: 1rem;
 }
 
-.tecnologia{
+/* TECNOLOGIAS */
+
+html body aside nav.tecnologias {
+  overflow: none;
+}
+.tecnologias ul {
+  display: flex;
   flex-wrap: wrap;
+
+  justify-content: space-between;
+
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.tecnologia {
+  border: solid #cb92b1;
+  background-color: #cb92b1;
+  list-style-type: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 3rem;
+
+  width: 86px;
+  height: 24px;
+  left: 70px;
+  top: 855px;
+}
+
+/* EXPERICENCIAS and EDUCATION */
+
+.experiences ul,
+.education ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: 4rem;
+}
+
+/* ########### MAIN ########## */
+
+
+
+main nav {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  color: #837e9f;
+
+  display: flex;
+  width: auto;
+}
+
+/* MEUS PROJETOS */
+
+.projetos {
+  display: flex;
+}
+
+.big-container {
+  margin: 2rem;
+
+  color: #837e9f;
+
+  background-color: #302f3d;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  border-radius: 1rem;
+
+  width: auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  border-radius: 1rem;
+
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #4746523c;
+
+  display: flex;
+
+  flex-direction: column;
+  padding: 2rem;
+
+  gap: 22px;
+}
+
+.projeto-footer {
+  display: flex;
+  flex: row;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projeto-footer p {
+  display: flex;
+  align-items: center;
+
+  gap: 0.4rem;
+}
+
+/* RECENT POSTS */
+
+.posts {
+  display: inline;
+}
+
+#posts-foto {
+  border: none;
+}
+
+.posts .container{
+  flex-direction: row;
+}
+
+
+ /* #posts-title{
+  display: flex;
+  flex-direction: column;
+ } */
+
+ #posts-title{
+  margin-bottom: 29px;
+  
+ }
+
+#posts-title h2{
+  margin: 0;
+  font-size: 18px;
+}
+
+div.posts-description{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#posts-footer{
+  display: flex;
+  gap: 2rem;
+}
+
+.posts article.container{
+  align-items: center;
+  margin: 1rem;
+  
+}
+
+#posts-foto{
+margin: 0;
+
+}
+
+.posts-description div{
+  font-size: 15px;
+  font-weight: 400;
 }
